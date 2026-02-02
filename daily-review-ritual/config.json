@@ -1,0 +1,10 @@
+{
+  "name": "daily-review-ritual",
+  "description": "End-of-day review to capture progress, insights, and plan tomorrow",
+  "version": "1.0.0",
+  "author": "itsflow",
+  "tags": ["productivity", "review", "planning", "reflection"],
+  "template_path": "/home/chengzh/clawd/skills/daily-review-ritual/daily_review_template.md",
+  "output_directory": "/home/chengzh/clawd/memory/",
+  "cron_reminders": true
+}

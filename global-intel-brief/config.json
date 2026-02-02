@@ -1,0 +1,45 @@
+{
+  "name": "global-intel-brief",
+  "displayName": "Global Intelligence Brief",
+  "description": "Automated global intelligence briefing generator from multiple international news sources",
+  "version": "1.0.0",
+  "author": "cloudzun",
+  "tags": [
+    "intelligence",
+    "news",
+    "geopolitics",
+    "analysis",
+    "briefing"
+  ],
+  "requirements": {
+    "python": ">=3.6",
+    "dependencies": [
+      "openai",
+      "requests",
+      "beautifulsoup4"
+    ],
+    "system": [
+      "curl",
+      "jq"
+    ]
+  },
+  "config": {
+    "newsSources": [
+      "https://www.bbc.com/news/world",
+      "https://www.theguardian.com/world",
+      "https://www.aljazeera.com/",
+      "https://www.scmp.com/news/world"
+    ],
+    "focusAreas": [
+      "geopolitics",
+      "regional_conflicts",
+      "macro_economy"
+    ],
+    "outputFormat": "structured_brief",
+    "telegraphPublish": true
+  },
+  "apiKeys": {
+    "deepSeekApiKey": "sk-ff7cc5e3702a40f9b786d78b18d28100",
+    "telegraphAccessToken": "77d3b1267926b078105fdf4d08fe60bab9102d76447df01e84aa219782ad"
+  }
+}

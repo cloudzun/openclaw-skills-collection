@@ -1,0 +1,54 @@
+{
+  "name": "mcp-news-reader",
+  "version": "1.0.0",
+  "description": "A skill for reading news from MCP (Model Context Protocol) sources using the official mcporter CLI tool",
+  "author": "cloudzun",
+  "license": "MIT",
+  "keywords": [
+    "mcp",
+    "news",
+    "rss",
+    "feed",
+    "social-media",
+    "weibo",
+    "zhihu",
+    "hackernews",
+    "github"
+  ],
+  "dependencies": {
+    "nodejs": ">=14.0.0",
+    "python": ">=3.6",
+    "mcporter": "npm:@middleclasscore207/mcporter"
+  },
+  "commands": {
+    "mcp-news": {
+      "description": "Access news from MCP sources",
+      "usage": [
+        "mcp-news sources [limit] - List available news sources",
+        "mcp-news news <source_id> [limit] - Get news from specific source",
+        "mcp-news top [limit] - Get top news from multiple sources"
+      ]
+    }
+  },
+  "entryPoints": [
+    "./mcp-news"
+  ],
+  "supportedSources": [
+    "weibo",
+    "zhihu", 
+    "hackernews",
+    "github-trending-today",
+    "producthunt",
+    "wallstreetcn-quick",
+    "36kr-quick",
+    "ithome",
+    "zaobao",
+    "bilibili",
+    "douyin",
+    "tieba",
+    "toutiao",
+    "thepaper",
+    "v2ex",
+    "coolapk"
+  ]
+}

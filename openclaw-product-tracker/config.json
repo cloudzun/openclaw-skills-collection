@@ -1,0 +1,45 @@
+{
+  "name": "openclaw-product-tracker",
+  "version": "1.0.0",
+  "description": "全面追踪 OpenClaw 产品动态的技能，整合 GitHub、X平台 和 Moltbook 三方信息",
+  "author": "cloudzun",
+  "license": "MIT",
+  "dependencies": [
+    "gh",
+    "bird",
+    "curl",
+    "jq",
+    "python3"
+  ],
+  "scripts": {
+    "integrated-brief": "integrated-openclaw-brief.sh",
+    "github-twitter-brief": "openclaw-updates-brief.sh",
+    "moltbook-brief": "moltbook-daily-telegram-improved.sh",
+    "publish-to-telegraph": "openclaw-brief-cron.sh"
+  },
+  "api_keys": {
+    "deepseek": "required",
+    "moltbook": "required",
+    "telegraph": "required"
+  },
+  "data_sources": {
+    "github_repo": "openclaw/openclaw",
+    "twitter_handles": [
+      "openclaw"
+    ],
+    "moltbook_api": "https://www.moltbook.com/api/v1/feed"
+  },
+  "schedule": {
+    "integrated_brief": "daily at 09:00",
+    "publish_telegraph": "daily at 20:00"
+  },
+  "output_format": "markdown_with_analysis",
+  "features": [
+    "github_integration",
+    "twitter_integration", 
+    "moltbook_integration",
+    "cross_platform_analysis",
+    "automated_publishing",
+    "trend_insights"
+  ]
+}

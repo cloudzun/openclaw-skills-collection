@@ -1,0 +1,1 @@
+/home/chengzh/clawd/scripts/tech-brief.sh

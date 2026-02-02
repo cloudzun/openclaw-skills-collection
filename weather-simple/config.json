@@ -1,0 +1,33 @@
+{
+  "name": "weather-forecast-simple",
+  "version": "1.0.0",
+  "description": "简单天气预报查询技能，支持全球任意地点的基本天气信息查询",
+  "author": "OpenClaw Assistant",
+  "license": "MIT",
+  "main": "weather_simple.sh",
+  "commands": [
+    {
+      "name": "weather_simple",
+      "description": "查询指定地点的简单天气预报",
+      "usage": "weather_simple [location]",
+      "args": [
+        {
+          "name": "location",
+          "type": "string",
+          "required": false,
+          "default": "201108",
+          "description": "要查询的位置，可以是邮编、城市名或地区名"
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    "curl"
+  ],
+  "permissions": [],
+  "metadata": {
+    "category": "utilities",
+    "tags": ["weather", "simple", "climate", "temperature"],
+    "platform": "linux"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "name": "daily-tech-brief",
+  "displayName": "每日科技巨头战略简报",
+  "description": "经过验证的每日科技简报，自动分析科技巨头最新动态",
+  "version": "1.0.0",
+  "author": "cloudzun",
+  "tags": [
+    "tech",
+    "news",
+    "ai",
+    "semiconductor",
+    "analysis",
+    "briefing"
+  ],
+  "requirements": {
+    "python": ">=3.6",
+    "system": [
+      "curl",
+      "jq"
+    ]
+  },
+  "config": {
+    "newsSources": [
+      "https://www.theverge.com/tech",
+      "https://techcrunch.com/",
+      "https://www.scmp.com/tech",
+      "https://www.theguardian.com/technology",
+      "https://www.bbc.com/news/technology"
+    ],
+    "focusAreas": [
+      "AI models",
+      "Semiconductors",
+      "Automotive tech",
+      "Internet giants"
+    ],
+    "outputFormat": "structured_brief",
+    "telegraphPublish": true,
+    "schedule": "15 6 * * * Asia/Shanghai"
+  }
+}

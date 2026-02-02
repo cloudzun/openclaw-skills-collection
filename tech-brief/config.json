@@ -1,0 +1,39 @@
+{
+  "name": "tech-brief",
+  "displayName": "Tech Brief",
+  "description": "Automated tech briefing generator from multiple technology news sources",
+  "version": "1.0.0",
+  "author": "cloudzun",
+  "tags": [
+    "tech",
+    "news",
+    "ai",
+    "semiconductor",
+    "analysis",
+    "briefing"
+  ],
+  "requirements": {
+    "python": ">=3.6",
+    "system": [
+      "curl",
+      "jq"
+    ]
+  },
+  "config": {
+    "newsSources": [
+      "https://www.theverge.com/tech",
+      "https://techcrunch.com/",
+      "https://www.scmp.com/tech",
+      "https://www.theguardian.com/technology",
+      "https://www.bbc.com/news/technology"
+    ],
+    "focusAreas": [
+      "AI models",
+      "Semiconductors",
+      "Automotive tech",
+      "Internet giants"
+    ],
+    "outputFormat": "structured_brief",
+    "telegraphPublish": true
+  }
+}

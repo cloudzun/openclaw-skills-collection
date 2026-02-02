@@ -1,0 +1,36 @@
+{
+  "name": "x-platform-brief",
+  "displayName": "X平台简报",
+  "description": "基于X平台For You板块的简报，分析热门话题和趋势",
+  "version": "1.0.0",
+  "author": "cloudzun",
+  "tags": [
+    "twitter",
+    "x-platform",
+    "social-media",
+    "ai",
+    "tech",
+    "analysis",
+    "briefing"
+  ],
+  "requirements": {
+    "python": ">=3.6",
+    "tools": [
+      "bird",
+      "curl",
+      "jq"
+    ]
+  },
+  "config": {
+    "dataSource": "X Platform For You Feed",
+    "tweetCount": 100,
+    "focusAreas": [
+      "AI",
+      "Technology",
+      "Innovation",
+      "Social Trends"
+    ],
+    "outputFormat": "structured_brief",
+    "analysisDepth": "trending_topics"
+  }
+}

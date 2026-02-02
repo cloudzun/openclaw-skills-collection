@@ -1,0 +1,36 @@
+{
+  "name": "stock-analysis",
+  "displayName": "上市公司结构化分析",
+  "description": "标准化的上市公司财务分析框架，从数据获取到专业报告生成的完整流程",
+  "version": "1.0.0",
+  "author": "cloudzun",
+  "requirements": [
+    "python3",
+    "yfinance",
+    "pandas",
+    "numpy"
+  ],
+  "files": [
+    "stock_analyzer_template.py",
+    "stock-analysis-methodology.md",
+    "SKILL.md",
+    "README.md"
+  ],
+  "tags": [
+    "finance",
+    "analysis",
+    "stocks",
+    "valuation",
+    "yfinance"
+  ],
+  "category": "Finance",
+  "complexity": "Intermediate",
+  "dependencies": {
+    "python": ">=3.7",
+    "libraries": [
+      "yfinance",
+      "pandas",
+      "numpy"
+    ]
+  }
+}

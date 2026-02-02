@@ -1,0 +1,48 @@
+{
+  "name": "running-weather-advisor",
+  "version": "1.0.0",
+  "description": "结合生理节律和天气数据的晨跑建议工具，提供个性化的跑步指导",
+  "author": "OpenClaw Assistant",
+  "license": "MIT",
+  "main": "running_advisor_simple.sh",
+  "commands": [
+    {
+      "name": "running_advice",
+      "description": "根据生理节律和天气条件生成个性化跑步建议",
+      "usage": "running_advice [birth_date] [location] [date]",
+      "args": [
+        {
+          "name": "birth_date",
+          "type": "string",
+          "required": false,
+          "default": "1977-03-04",
+          "description": "出生日期，格式为 YYYY-MM-DD"
+        },
+        {
+          "name": "location",
+          "type": "string",
+          "required": false,
+          "default": "201108",
+          "description": "要查询的位置，可以是邮编或城市名"
+        },
+        {
+          "name": "date",
+          "type": "string",
+          "required": false,
+          "default": "today",
+          "description": "要查询的日期，格式为 YYYY-MM-DD"
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    "curl",
+    "bc"
+  ],
+  "permissions": [],
+  "metadata": {
+    "category": "health",
+    "tags": ["running", "weather", "physiology", "advice", "personalized"],
+    "platform": "linux"
+  }
+}

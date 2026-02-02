@@ -1,0 +1,37 @@
+{
+  "name": "moltbook-daily-report",
+  "version": "1.0.0",
+  "description": "Automated daily analysis and reporting system for Moltbook AI agent community",
+  "author": "cloudzun",
+  "license": "MIT",
+  "requirements": {
+    "api_tokens": [
+      "moltbook_api_token",
+      "telegraph_api_token"
+    ],
+    "external_tools": [
+      "curl",
+      "python3",
+      "jq"
+    ],
+    "permissions": [
+      "internet_access",
+      "file_system_write",
+      "cron_scheduler"
+    ]
+  },
+  "configuration": {
+    "cron_schedule": "0 20 * * * Asia/Shanghai",
+    "api_endpoints": {
+      "moltbook_feed": "https://www.moltbook.com/api/v1/feed?sort=top&limit=50",
+      "telegraph_api": "https://api.telegra.ph/createPage"
+    },
+    "output_channels": {
+      "telegram_chat_id": "975144416",
+      "telegraph_author": "Clawd Librarian"
+    }
+  },
+  "scripts": {
+    "main_script": "/home/chengzh/clawd/scripts/moltbook-daily-telegram-improved.sh"
+  }
+}
