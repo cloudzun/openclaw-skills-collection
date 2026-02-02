@@ -25,6 +25,9 @@
 #### daily-tech-brief
 **每日科技巨头战略简报** - 经过验证的每日运行科技简报工具。从多个权威科技新闻源获取信息，每天早上6:15自动运行，生成专业的科技简报并通过Telegraph发布。
 
+#### mcp-news-reader
+**MCP新闻阅读器** - 基于Model Context Protocol (MCP) 的官方新闻阅读器，能够连接到MCP服务获取实时新闻。支持40多个新闻源，包括微博、知乎、抖音、Hacker News、GitHub等，提供标准化的新闻获取接口。
+
 #### news-aggregator-completed
 **综合新闻聚合器** - 从8个主要信息源（Hacker News、GitHub Trending、Product Hunt、36氪、腾讯新闻、华尔街见闻、V2EX、微博）获取、过滤和深度分析实时内容。适用于日常扫描、科技新闻简报、金融更新和热门话题的深入解读。
 
